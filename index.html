@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myButton {
+      display: block;
+      margin: 0 auto;
+      background-color: #8E44AD;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #myButton:hover {
+      background-color: #7E33A6;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-text">
+    I found the most incredible website and guess what? It's like they wrote the code with YOU in mind!
+    <br>
+    Get ready to dive into a world of FUN.  It's like your own personal playground!
+    <br>
+    Think of it as a small token of appreciation for being the most amazing friend a person could ask for.
+  </div>
+  <button id="myButton">Click me for a Surprise</button>
+  <script>
+    const sounds = [
+      'sound1.mp3',
+      'sound2.mp3',
+      'sound3.mp3',
+      'sound4.mp3',
+      'sound5.mp3',
+      'sound6.mp3',
+      'sound7.mp3',
+      'sound8.mp3',
+      'sound9.mp3',
+      'sound10.mp3',
+      'sound11.mp3',
+      'sound12.mp3',
+      'sound13.mp3',
+      'sound14.mp3',
+      'sound15.mp3',
+      'sound16.mp3',
+      'sound17.mp3',
+      'sound18.mp3',
+    ];
+
+    document.getElementById('myButton').addEventListener('click', function () {
+      const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+      const audio = new Audio(randomSound);
+      audio.play();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#myButton {
+    display: block;
+    margin: 0 auto;
+    background-color: #8E44AD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #myButton:hover {
+    background-color: #7E33A6;
+  }
